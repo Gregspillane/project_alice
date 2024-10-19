@@ -1,3 +1,21 @@
+Project Alice is an advanced, open-source AI framework designed for creating, managing, and deploying AI agents with a focus on task execution and intelligent chat capabilities. Built using a microservices architecture, the system integrates a Node.js/Express backend, a Python-based workflow service using FastAPI, and a React/TypeScript frontend. MongoDB is used for data persistence, while Mongoose handles object modeling.
+
+The project is structured to provide a modular, extensible framework where users can define and execute tasks, integrate AI models, and manage conversations with AI agents. It is model-agnostic and supports a wide range of AI providers, including OpenAI, Azure, Anthropic, and local models via LM Studio, allowing for flexible and customizable solutions.
+
+Key features of Project Alice include:
+
+Task Management: The framework allows users to create, test, and run various tasks such as API tasks, prompt agent tasks (e.g., code generation, text-to-speech), and workflow tasks that combine multiple actions.
+Intelligent Chat System: A sophisticated chat interface integrates tasks and agents, offering context-aware interactions with AI models.
+APIs and Agents: Agents act as the core components for handling tasks and workflows, utilizing AI models and APIs for external data integration (e.g., search engines, Wikipedia, or Arxiv).
+Extensibility: The system is designed for easy addition of new components, task types, and APIs, supporting advanced AI workflows.
+User Management: Project Alice includes role-based access control, ensuring secure interaction with the system.
+Dockerized Environment: The entire project is containerized, making it straightforward to set up, deploy, and scale across different environments.
+The architecture focuses on scalability, separating the backend, workflow service, and frontend, allowing each component to evolve independently. Future development will enhance features such as workflow generation, file handling, error management, and complex task flows (e.g., ReAct and Retrieval-Augmented Generation).
+
+Overall, Project Alice aims to provide an open-source, user-friendly platform for building sophisticated, AI-powered applications with a focus on flexibility, customization, and ease of deployment.
+
+
+
 backend/
 └── src/
     ├── app.ts                         // Main application logic and initialization, sets up the express server and defines middleware
